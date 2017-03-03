@@ -1,0 +1,162 @@
+﻿<!DOCTYPE>
+<html>
+<head>
+    <title>Build Report E-mail Template (MSDN 2010 Style)</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <link href="msdn2010.css" rel="stylesheet" type="text/css" />
+    <link href="color-labels.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="page-center">
+    <div id="page-wrapper">
+        <div id="content-wrapper">
+        <div id="content">
+            <div class="clear"></div>
+
+            <div class="section header">
+                <h1><strong>Acme Explosives</strong> build report</h1>
+                <p>CruiseControl.NET Build Results for project Acme Explosives
+                   (<a href="https://build.acme.com/project/Acme_Explosives/ViewProjectReport.aspx">web page</a>)</p>
+            </div>
+
+            <div class="section">
+                <h2 class="success">Build Successful</h2>
+                <table class="build-summary">
+                    <tr>
+                        <th>Project:</th>
+                        <td>Acme Explosives</td>
+                    </tr>
+                    <tr>
+                        <th>Date of build:</th>
+                        <td>2011-03-24 18:05:30</td>
+                    </tr>
+                    <tr>
+                        <th>Running time:</th>
+                        <td>00:01:28</td>
+                    </tr>
+                    <tr>
+                        <th>Integration Request:</th>
+                        <td>Build (IfModificationExists) triggered from Continuous Integration Trigger</td>
+                    </tr>
+                    <tr>
+                        <th>Last changed:</th>
+                        <td>2011-03-24 17:57:29</td>
+                    </tr>
+                    <tr>
+                        <th>Last log entry:</th>
+                        <td>Used priority queue for sending messages. Case 82</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!--
+            <div class="section header">
+                <h2 class="failure">Build Exception</h2>
+                <table class="build-summary">
+                    <tr>
+                        <th>Project:</th>
+                        <td>Acme Explosives</td>
+                    </tr>
+                    <tr>
+                        <th>Date of build:</th>
+                        <td>2011-03-25 15:47:00</td>
+                    </tr>
+                    <tr>
+                        <th>Running time:</th>
+                        <td>00:00:02</td>
+                    </tr>
+                    <tr>
+                        <th>Integration Request:</th>
+                        <td>Build (IfModificationExists) triggered from Continuous Integration Trigger</td>
+                    </tr>
+                </table>
+                <p><strong>Error message:</strong></p>
+                <pre>ThoughtWorks.CruiseControl.Core.CruiseControlException: Source control operation failed: svn: Unknown hostname 'svnserver'.
+Process command: svn.exe log svn://svnserver/trunk/AcmeExplosives.WebDatabase -r "{2011-03-25T13:19:06Z}:{2011-03-25T14:30:16Z}" --verbose --xml --username acmeuser --password ******** --no-auth-cache --non-interactive
+   at ThoughtWorks.CruiseControl.Core.Sourcecontrol.ProcessSourceControl.Execute(ProcessInfo processInfo)
+   at ThoughtWorks.CruiseControl.Core.Sourcecontrol.Svn.GetModifications(IIntegrationResult from, IIntegrationResult to)
+   at ThoughtWorks.CruiseControl.Core.Sourcecontrol.QuietPeriod.GetModificationsWithLogging(ISourceControl sc, IIntegrationResult from, IIntegrationResult to)
+   at ThoughtWorks.CruiseControl.Core.Sourcecontrol.QuietPeriod.GetModifications(ISourceControl sourceControl, IIntegrationResult lastBuild, IIntegrationResult thisBuild)
+   at ThoughtWorks.CruiseControl.Core.IntegrationRunner.GetModifications(IIntegrationResult from, IIntegrationResult to)
+   at ThoughtWorks.CruiseControl.Core.IntegrationRunner.Integrate(IntegrationRequest request)
+  
+</pre>
+            </div>
+            -->
+
+            <div class="section">
+                <h3>Modifications since last build (1)</h3>
+                <table class="modifications-header">
+                    <tr>
+                      <th class="revision"><strong>Revision 22688</strong></th>
+                      <th class="commiter"><strong>Commiter:</strong> alice</th>
+                      <th class="date"><strong>Date:</strong> 2011-03-28 12:58:28</th>
+                    </tr>
+                    <tr>
+                      <th colspan="4" class="message">
+                        <strong>Message:</strong><br />
+                        Account.AccountSyncVersion and CompanyAccount.UserDbVersion are incremented every time an account or company data are updated.<br />
+                        Case 71<br /></th>
+                    </tr>
+                  </table>
+                  <table id="change-22688" class="modifications-details">
+                    <tr class="ui-oddrow">
+                      <td class="modified">Modified</td>
+                      <td>/trunk/AcmeExplosives/AcmeExplosives.dbproj</td>
+                    </tr>
+                    <tr class="ui-evenrow">
+                      <td class="modified">Modified</td>
+                      <td>/trunk/AcmeExplosives/Schema Objects/Schemas/dbo/Tables/Account.table.sql</td>
+                    </tr>
+                    <tr class="ui-oddrow">
+                      <td class="modified">Modified</td>
+                      <td>/trunk/AcmeExplosives/Schema Objects/Schemas/dbo/Tables/CompanyAccount.table.sql</td>
+                    </tr>
+                    <tr class="ui-evenrow">
+                      <td class="added">Added</td>
+                      <td>/trunk/AcmeExplosives/Schema Objects/Schemas/dbo/Tables/Constraints/Account.DF_Account_IsCancelled.defconst.sql</td>
+                    </tr>
+                    <tr class="ui-oddrow">
+                      <td class="deleted">Deleted</td>
+                      <td>/trunk/AcmeExplosives/Schema Objects/Schemas/dbo/Tables/Keys/Account.UQ_Email.ukey.sql</td>
+                    </tr>
+                </table>
+                <p class="summary">
+                    <span class="added">Added: 3</span>,
+                    <span class="modified">Modified: 1</span>,
+                    <span class="deleted">Deleted: 1</span>
+                </p>
+            </div>
+
+            <div class="section">
+                <h3>Errors (1)</h3>
+                <p class="error">c:\builds\AcmeExplosives\sql\debug\AcmeExplosives.sql (69,0):<br />
+                    <strong>error SQL01268:</strong> .Net SqlClient Data Provider: Msg 50000, Level 16, State 127, Line 10 Rows were detected. The schema update is terminating because data loss might occur.</p>
+            </div>
+            
+            <div class="section">
+                <h3>Warnings (23)</h3>
+                <p>Mvc\MvcDependencyResolverExtension.cs (24,33):<br />
+                    <strong>warning CS1591:</strong> Missing XML comment for publicly visible type or member 'Microsoft.Practices.Web.UnityExtensions.Mvc.MvcDependencyResolverExtension.Initialize()'</p>
+
+                <p>Mvc\MvcDependencyResolverStrategy.cs (41,16):<br />
+                    <strong>warning CS1591:</strong> Missing XML comment for publicly visible type or member 'Microsoft.Practices.Web.UnityExtensions.Mvc.MvcDependencyResolverStrategy.MvcDependencyResolverStrategy(Microsoft.Practices.Unity.IUnityContainer)'</p>
+
+                <p>Mvc\MvcDependencyResolverStrategy.cs (46,30):<br />
+                    <strong>warning CS1591:</strong> Missing XML comment for publicly visible type or member 'Microsoft.Practices.Web.UnityExtensions.Mvc.MvcDependencyResolverStrategy.PreBuildUp(Microsoft.Practices.ObjectBuilder2.IBuilderContext)'</p>
+            </div>
+            
+            <div class="section">
+                <h3>StyleCop Report</h3>
+                <p class="failure">Number of Violations: 5506</p>
+            </div>
+
+            <div id="footer">
+                <p>Acme DevOps, Generated by CruiseControl.NET Service running at ACMESRV1 server.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

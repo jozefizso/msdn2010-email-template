@@ -1,0 +1,153 @@
+﻿body {
+    color: #333333;
+    background: #CED5DB url('logos_and_bg.png') repeat-x 0 -100px;
+    font-family: 'Segoe UI','Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    line-height: 1.3em;
+}
+
+table, td, th {
+    font-size: 1em;
+}
+table th {
+    text-align: left;
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #3A3E43;
+    font-family: 'Segoe UI Semibold','Segoe UI','Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+    font-weight: normal;
+    line-height: 1.25em;
+    clear: both;
+}
+
+h1, .title {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+h1 strong {
+    font-family: 'Segoe UI','Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+    font-weight: bold;
+}
+
+h3, h4 {
+    color: #260859;
+    background: #E8E8E8;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: 5px solid #E8E8E8;
+    margin-left: -5px;
+    -moz-border-radius: 4px;
+}
+
+pre {
+    font-family: Consolas, 'Courier New CE', monospace;
+    white-space: pre-wrap;
+}
+
+.clear {
+    clear: both;
+    height: 0;
+}
+
+#page-center {
+    width: 966px;
+    margin: 0 auto;
+}
+#page-wrapper {
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+#content-wrapper {
+    background: white;
+    border: 1px solid #ccc;
+    padding-top: 1px;
+}
+#content {
+    min-height: 300px;
+    margin: 0 1.5em;
+    width: 90%;
+}
+
+#footer {
+    border-top: 3px solid #E8E8E8;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    margin-top: 2em;
+}
+
+.section.header {
+    border-bottom: 3px solid #E8E8E8;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+.success {
+    color: green; /*#bfda55;*/
+}
+
+.failure {
+    color: red; /*#fd7a6d;*/
+}
+
+table.build-summary {
+    
+}
+table.build-summary th {
+    text-align: left;
+    width: 11em;
+}
+
+table.modifications-header {
+    width: 100%;
+}
+
+table.modifications-header th {
+    font-weight: normal;
+}
+
+table.modifications-details {
+    font-size: 0.9em;
+    width: 100%;
+}
+
+/*
+span.modified,
+span.added,
+span.deleted {
+    xfont-weight: bold;
+}
+span.modified {
+    color: #69b3fe;
+    color: #3799FC;
+}
+span.added {
+    color: #A7DA3A;
+}
+span.deleted {
+    color: #FC3523;
+}*/
+
+td.modified,
+td.added,
+td.deleted {
+    border-left: 3px solid;
+}
+
+td.modified {
+    border-color: #69b3fe;
+}
+td.added {
+    border-color: #bfda55;
+}
+td.deleted {
+    border-color: #fd7a6d;
+}
+
+p.error {
+    color: red;
+}

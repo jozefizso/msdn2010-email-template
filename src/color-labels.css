@@ -1,0 +1,121 @@
+ul.labels {
+    margin: 0 0 0 1.5em;
+    padding: 0;
+}
+
+ul.labels li {
+    width: 10em;
+    height: 1.25em;
+    line-height: 1.25em;
+    cursor: default;
+    list-style: none;
+}
+
+.ui-label {
+    margin: 0.2em 0;
+    padding: 0.1em 0.5em 0.1em 0.7em;
+    border-radius: 0.75em;
+    -moz-border-radius: 0.75em;
+    position: relative;
+}
+
+
+.ui-label-green,
+.ui-label-green .ui-label-indicator {
+    background-color: #bfda55;
+    background-image: -moz-linear-gradient(-90deg, #dceca8, #bfda55);
+    background-image: -webkit-linear-gradient(top, #dceca8, #bfda55);
+}
+.ui-label-yellow,
+ .ui-label-indicator {
+    background-color: #f3df57;
+    background-image: -moz-linear-gradient(-90deg, #fcf4a9, #f3df57);
+    background-image: -webkit-linear-gradient(top, #fcf4a9, #f3df57);
+}
+.ui-label-orange,
+.ui-label-orange .ui-label-indicator {
+    background-color: #f9b753;
+    background-image: -moz-linear-gradient(-90deg, #fcd7a2, #f9b753);
+    background-image: -webkit-linear-gradient(top, #fcd7a2, #f9b753);
+}
+.ui-label-red,
+.ui-label-red .ui-label-indicator {
+    background-color: #fd7a6d;
+    background-image: -moz-linear-gradient(-90deg, #ffb5ac, #fd7a6d);
+    background-image: -webkit-linear-gradient(top, #ffb5ac, #fd7a6d);
+}
+.ui-label-blue,
+.ui-label-blue .ui-label-indicator {
+    background-color: #69b3fe;
+    background-image: -moz-linear-gradient(-90deg, #b6dbff, #69b3fe);
+    background-image: -webkit-linear-gradient(top, #b6dbff, #69b3fe);
+}
+.ui-label-purple,
+.ui-label-purple .ui-label-indicator {
+    background-color: #cba2df;
+    background-image: -moz-linear-gradient(-90deg, #e8cdef, #cba2df);
+    background-image: -webkit-linear-gradient(top, #e8cdef, #cba2df);
+}
+.ui-label-gray,
+.ui-label-gray .ui-label-indicator {
+    background-color: #b7b7b7;
+    background-image: -moz-linear-gradient(-90deg, #d8d8d8, #b7b7b7);
+    background-image: -webkit-linear-gradient(top, #d8d8d8, #b7b7b7);
+}
+.ui-label-selected {
+    background: #2c7cd6;
+    color: white;
+}
+
+.ui-label-indicator {
+    visibility: hidden;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    position: absolute;
+    top: 0.2em;
+    right: 0.4em;
+}
+.ui-label-selected .ui-label-indicator {
+    visibility: visible;
+}
+
+
+/* small rectangle boxes with labels */
+
+.ui-labels-container {
+    width: 17em;
+    margin-top: 1.5em;
+}
+
+.ui-labels-container p {
+    margin: 0;
+}
+
+.ui-label-box-description {
+    text-align: center;
+}
+
+.ui-label-box {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    border: 1px solid white;
+    padding: 0.2em;
+}
+.ui-label-box:hover {
+    background-color: #ebebeb;
+    border-color: #b7b7b7;
+}
+.ui-label-box span {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+}
+
